@@ -5,13 +5,13 @@
 class Lazyagent < Formula
   desc "Lazygit-style TUI for skills, subagents, MCP servers, prompts and memory across Claude Code, Codex and Gemini CLI."
   homepage "https://github.com/mi-subbotin/lazyagent"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/mi-subbotin/lazyagent/releases/download/v0.5.0/lazyagent_0.5.0_darwin_amd64.tar.gz"
-    sha256 "e89c6b0603e547e2ae91cfab0e89964de479ef8b657f04459b8272bb3ee5800b"
+    url "https://github.com/mi-subbotin/lazyagent/releases/download/v0.6.0/lazyagent_0.6.0_darwin_amd64.tar.gz"
+    sha256 "db4859176f3719e41ca04d6eef2d7f40559825b3464aa0bbbfd731dc7be0906d"
 
     define_method(:install) do
       bin.install "lazyagent"
@@ -21,8 +21,8 @@ class Lazyagent < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/mi-subbotin/lazyagent/releases/download/v0.5.0/lazyagent_0.5.0_darwin_arm64.tar.gz"
-    sha256 "a77b73bbee891f8d6fa73d910e4adf555fc72ed3645c5c6cd373ea83ab8ba1ba"
+    url "https://github.com/mi-subbotin/lazyagent/releases/download/v0.6.0/lazyagent_0.6.0_darwin_arm64.tar.gz"
+    sha256 "894de2329ddb9afb41e890293e05dcde70d2399544dd0a6641708f6c62511291"
 
     define_method(:install) do
       bin.install "lazyagent"
